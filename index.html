@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho - Agro Forte e Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <button id="backToTop" title="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-seedling"></i> Agrinho <span>2026</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#pilares" class="nav-link">Pilares</a>
+                <a href="#quiz" class="nav-link">Desafio</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Agro: Forte e Sustentável</h1>
+            <p>Cultivando o conhecimento hoje para colher um futuro equilibrado, tecnológico e próspero no campo.</p>
+            <a href="#sobre" class="btn-primary">Descubra Como <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="section-container">
+            <div class="sobre-text">
+                <h2>O Programa Agrinho</h2>
+                <div class="underline"></div>
+                <p>O Agrinho é o maior programa de responsabilidade social do Sistema FAEP/SENAR-PR. Há décadas, ele
+                    atua como uma ferramenta pedagógica que conecta a educação das escolas com a realidade e a evolução
+                    do meio rural.</p>
+                <p>O tema <strong>"Agro Forte e Sustentável"</strong> reflete o equilíbrio perfeito: a força da nossa
+                    produção agrícola movida a tecnologia e inovação, caminhando lado a lado com a preservação ambiental
+                    e o respeito às próximas gerações.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pilares" id="pilares">
+        <div class="section-container">
+            <h2 class="section-title">Os Três Pilares da Sustentabilidade</h2>
+            <div class="underline center"></div>
+
+            <div class="grid-pilares">
+                <div class="card-pilar">
+                    <div class="card-icon"><i class="fas fa-tractor"></i></div>
+                    <h3>Produção Forte</h3>
+                    <p>Uso de tecnologia de ponta, agricultura de precisão e manejo inteligente para produzir mais
+                        alimentos em menos espaço, combatendo o desperdício.</p>
+                </div>
+
+                <div class="card-pilar">
+                    <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+                    <h3>Respeito à Natureza</h3>
+                    <p>Preservação das fontes de água, rotação de culturas, plantio direto e proteção da biodiversidade.
+                        Cuidar da terra para que ela continue fértil.</p>
+                </div>
+
+                <div class="card-pilar">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educação Cidadã</h3>
+                    <p>Levar informação de qualidade para crianças e jovens das escolas públicas e particulares,
+                        formando defensores de um futuro consciente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+        <div class="section-container">
+            <h2>Teste seus Conhecimentos!</h2>
+            <p class="quiz-intro">Você realmente conhece a força do agro sustentável? Responda à pergunta abaixo:</p>
+
+            <div class="quiz-box">
+                <p class="question">Qual das alternativas abaixo representa uma prática do Agro Sustentável?</p>
+                <div class="options">
+                    <button class="option-btn" data-correct="false">A) Utilizar água sem controle ou
+                        monitoramento.</button>
+                    <button class="option-btn" data-correct="true">B) Fazer rotação de culturas e proteger as matas
+                        ciliares.</button>
+                    <button class="option-btn" data-correct="false">C) Abandonar o uso de tecnologias e focar apenas no
+                        passado.</button>
+                </div>
+                <div id="quiz-result" class="quiz-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="section-container">
+            <h2>Participe do Agrinho</h2>
+            <div class="underline center"></div>
+            <p>Se você é professor ou aluno, envie suas ideias e projetos sustentáveis para o concurso!</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="Fale sobre o seu projeto pedagógico..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="form-feedback" class="form-feedback"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Programa Agrinho - Tema: Agro Forte e Sustentável</p>
+        <p>Desenvolvido com foco em educação, tecnologia e meio ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
